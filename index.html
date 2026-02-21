@@ -1,5 +1,3 @@
-
-HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,7 +17,7 @@ HTML
         th { background-color: var(--azul); color: white; }
         .grid-graficos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
         .grafico-item { text-align: center; font-size: 0.85em; color: #555; }
-        .grafico-item img { width: 100%; border-radius: 5px; border: 1px solid #eee; }
+        .grafico-item img { width: 100%; border-radius: 5px; border: 1px solid #eee; display: block; }
         .codigo-python { background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 13px; margin: 15px 0; }
     </style>
 </head>
@@ -33,7 +31,7 @@ HTML
 
     <section class="seccion-datos">
         <div class="badge">Ejemplo 1: Datos Cuantitativos Discretos (n=100)</div>
-        <p><strong>Contexto:</strong> Conteo del número de dispositivos móviles en 100 hogares de una comunidad para analizar la brecha digital.</p>
+        <p><strong>Contexto:</strong> Conteo del número de dispositivos móviles en 100 hogares de una comunidad.</p>
         
         <div class="codigo-python">
             # Generación de n=100 datos discretos<br>
@@ -60,18 +58,18 @@ HTML
         </table>
 
         <h3>Visualización de Datos (5 Gráficos)</h3>
-           <div class="grid-graficos">
-    <div class="grafico-item"><img src="IMAGENES/ej1_hist.png" alt="Histograma"><p>Histograma</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej1_poli.png" alt="Polígono"><p>Polígono de Frecuencias</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej1_barras.png" alt="Barras"><p>Diagrama de Barras</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej1_ojiva.png" alt="Ojiva"><p>Ojiva</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej1_pastel.png" alt="Pastel"><p>Gráfica de Pastel</p></div>
-</div>
+        <div class="grid-graficos">
+            <div class="grafico-item"><img src="IMAGENES/ej1_hist.png" alt="Histograma"><p>Histograma</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej1_poli.png" alt="Polígono"><p>Polígono de Frecuencias</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej1_barras.png" alt="Barras"><p>Diagrama de Barras</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej1_ojiva.png" alt="Ojiva"><p>Ojiva</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej1_pastel.png" alt="Pastel"><p>Gráfica de Pastel</p></div>
+        </div>
     </section>
 
     <section class="seccion-datos">
         <div class="badge">Ejemplo 2: Datos Cuantitativos Continuos (n=100)</div>
-        <p><strong>Contexto:</strong> Medición del peso corporal (kg) de 100 atletas para una competencia de alto rendimiento.</p>
+        <p><strong>Contexto:</strong> Medición del peso corporal (kg) de 100 atletas.</p>
 
         <div class="codigo-python">
             # Generación de n=100 datos continuos<br>
@@ -101,17 +99,17 @@ HTML
 
         <h3>Visualización de Datos (5 Gráficos)</h3>
         <div class="grid-graficos">
-    <div class="grafico-item"><img src="IMAGENES/ej2_hist.png" alt="Histograma"><p>Histograma</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej2_poli.png" alt="Polígono"><p>Polígono de Frecuencias</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej2_barras.png" alt="Barras"><p>Diagrama de Barras</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej2_ojiva.png" alt="Ojiva"><p>Ojiva</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej2_pastel.png" alt="Pastel"><p>Gráfica de Pastel</p></div>
-</div>
+            <div class="grafico-item"><img src="IMAGENES/ej2_hist.png" alt="Histograma"><p>Histograma</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej2_poli.png" alt="Polígono"><p>Polígono de Frecuencias</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej2_barras.png" alt="Barras"><p>Diagrama de Barras</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej2_ojiva.png" alt="Ojiva"><p>Ojiva</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej2_pastel.png" alt="Pastel"><p>Gráfica de Pastel</p></div>
+        </div>
     </section>
 
     <section class="seccion-datos">
         <div class="badge">Ejemplo 3: Datos Cualitativos (n=100)</div>
-        <p><strong>Contexto:</strong> Encuesta sobre el navegador web preferido por 100 desarrolladores de software.</p>
+        <p><strong>Contexto:</strong> Navegador web preferido por 100 desarrolladores.</p>
 
         <h3>Tabla de Distribución de Frecuencias</h3>
         <table>
@@ -133,12 +131,12 @@ HTML
 
         <h3>Visualización de Datos (5 Gráficos)</h3>
         <div class="grid-graficos">
-    <div class="grafico-item"><img src="IMAGENES/ej3_hist.png" alt="Histograma"><p>Histograma</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej3_poli.png" alt="Polígono"><p>Polígono de Frecuencias</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej3_barras.png" alt="Barras"><p>Diagrama de Barras</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej3_ojiva.png" alt="Ojiva"><p>Ojiva</p></div>
-    <div class="grafico-item"><img src="IMAGENES/ej3_pastel.png" alt="Pastel"><p>Gráfica de Pastel</p></div>
-</div>
+            <div class="grafico-item"><img src="IMAGENES/ej3_hist.png" alt="Histograma"><p>Histograma</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej3_poli.png" alt="Polígono"><p>Polígono de Frecuencias</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej3_barras.png" alt="Barras"><p>Diagrama de Barras</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej3_ojiva.png" alt="Ojiva"><p>Ojiva</p></div>
+            <div class="grafico-item"><img src="IMAGENES/ej3_pastel.png" alt="Pastel"><p>Gráfica de Pastel</p></div>
+        </div>
     </section>
 </div>
 
